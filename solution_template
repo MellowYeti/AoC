@@ -5,9 +5,9 @@ class Solution:
     def silver(self, input_feed: Generator):
         # Part one implementation goes here
 
-        return 🤷
+        return "🤷"
 
     def gold(self, input_feed: Generator):
         # Part two implementation goes here
 
-        return 🤷
+        return "🤷"

@@ -1,5 +1,6 @@
-from invoke import task
 from pathlib import Path
+
+from invoke import task
 
 
 @task
