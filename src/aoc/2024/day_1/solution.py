@@ -1,12 +1,8 @@
 from collections import defaultdict
-from pathlib import Path
 from typing import Generator
 
 
 class Solution:
-    def __init__(self):
-        self.input_path = Path(__file__).parent.joinpath(Path("input.txt"))
-
     def silver(self, input_feed: Generator):
         left = list()
         right = list()
