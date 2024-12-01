@@ -15,8 +15,10 @@ def run_puzzle(year: int, day: int):
         solution_instance = solution_module.Solution()
     except ImportError as e:
         logger.error(
-            "Could not import solution module, check `year` and `day` arguments"
+            "Could not import solution module, check `year` and `day` arguments",
+            extra={"year": year, "day": day},
         )
+        raise RuntimeError from e
 
     input_path = (
         Path(__file__)
