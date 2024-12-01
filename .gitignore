@@ -1,0 +1,12 @@
+# Virtual Environment
+**/.venv
+
+# Linting artifacts
+**/.ruff_cache
+**/.mypy_cache
+
+# Python Caching
+**/__pycache__
+
+# Input files
+**/input.txt
