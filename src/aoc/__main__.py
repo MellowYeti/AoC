@@ -31,9 +31,9 @@ def run_puzzle(year: int, day: int):
 
 if __name__ == "__main__":
     parser = ArgumentParser(
-        prog="ProgramName",
-        description="What the program does",
-        epilog="Text at the bottom of help",
+        prog="AoC by MellowYeti",
+        description="Executes Advent of Code solutions",
+        epilog="Merry Christmas",
     )
 
     parser.add_argument("-y", "--year", default=2024, help="Solution year, eg: 2024")
