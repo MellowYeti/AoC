@@ -8,6 +8,7 @@ packages = [{"include" = "aoc", "from" = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.13"
+httpx = "^0.28.0"
 
 
 [tool.poetry.group.dev.dependencies]

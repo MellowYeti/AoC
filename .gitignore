@@ -11,3 +11,6 @@
 # Input files
 **/input.txt
 **/example.txt
+
+#Direnv
+.envrc

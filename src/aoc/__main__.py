@@ -11,24 +11,23 @@ logger = logging.getLogger(__file__)
 
 def run_puzzle(year: int, day: int):
     try:
-        solution_module = import_module(f"aoc.{year}.day_{day}.solution")
+        solution_module = import_module(f"aoc.year_{year}.day_{day}.solution")
         solution_instance = solution_module.Solution()
     except ImportError as e:
         logger.error(
             "Could not import solution module, check `year` and `day` arguments",
             extra={"year": year, "day": day},
         )
-        raise RuntimeError from e
+        raise SystemExit
 
-    input_path = (
-        Path(__file__)
-        .parent.joinpath(Path(str(year)))
-        .joinpath(Path(f"day_{day}").joinpath("input.txt"))
+    print(f"-= 🎄 Advent of Code {year}: Day {day} 🎄 =-\n")
+    print(
+        f" ❄️ 🥈 Silver solution: {solution_instance.silver(input_feed(str(day), str(year)))}"
     )
-
-    print(f"-= Advent of Code {year}: Day {day} =-")
-    print(f" - 🥈 Silver solution: {solution_instance.silver(input_feed(input_path))}")
-    print(f" - 🥇 Gold solution: {solution_instance.gold(input_feed(input_path))}")
+    print(
+        f" ❄️ 🥇 Gold solution: {solution_instance.gold(input_feed(str(day), str(year)))}\n"
+    )
+    print(f"-= 🎅 Merry Christmas 🎅 =-\n")
 
 
 if __name__ == "__main__":
