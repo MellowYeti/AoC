@@ -9,10 +9,11 @@ You will need:
 - Download the repo and run `poetry install`
 
 ## Execution
-You will need to place your `input.txt` into the relevent folders for each day eg `src/aoc/2024/day_1/input.txt` I may try to automate this step in the future.
 
 ```shell
-poetry run python -m aoc -d {DAY}
+poetry run python -m aoc -d {DAY} -y {YEAR}
+
+# Where day is a number between 1-25
 ```
 
-Where day is a number between 1-25
+The system will try to download the relevant input and store it if you have a`SESSION_COOKIE` stored in your environment.
