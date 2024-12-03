@@ -14,7 +14,7 @@ def lint(c):
 def new_solution(c, day, year="2024"):
     module_path = (
         Path(__file__)
-        .parent.joinpath(Path(f"src/aoc/{year}"))
+        .parent.joinpath(Path(f"src/aoc/year_{year}"))
         .joinpath(Path(f"day_{day}"))
     )
 
